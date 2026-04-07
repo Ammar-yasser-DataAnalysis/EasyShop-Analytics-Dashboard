@@ -1,8 +1,3 @@
-# 🛍️ EasyShop Analytics Dashboard
-
-> A comprehensive Power BI analytics solution built for the **Orange × Instant Hackathon**, transforming raw SQL Server e-commerce data into actionable business intelligence across three analytical dimensions.
-
----
 
 ## 📌 Project Overview
 
