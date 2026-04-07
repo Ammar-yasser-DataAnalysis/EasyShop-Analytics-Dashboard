@@ -16,36 +16,6 @@ EasyShop is a multi-page Power BI dashboard designed to give business stakeholde
 
 ---
 
-## 🗂️ Dashboard Pages
-
-### 1. Executive Overview
-High-level KPIs for decision-makers, including:
-- **9.57%** Conversion Rate
-- **219.01** Average Order Value
-- **25.72%** Engagement Rate
-- **15.21%** Drop-Off Percentage
-- Conversion rate trend over time (Jan 2023 – Jul 2025)
-- Funnel breakdown: VIEW → CLICK → DROP-OFF → PURCHASE
-- Session distribution: Home Page vs. Product Page vs. Total Visits
-
-### 2. Marketing & Engagement
-Product-level marketing performance analysis:
-- **8M** Total Views · **43.36K** Total Revenue · **198** Purchases
-- CTR comparison across all products (top performers: Baseball Glove 22.37%, Yoga Mat 22.12%)
-- Conversion Rate Efficiency scatter plot (Views vs. Conversion Rate by product)
-- Products Attractiveness: side-by-side revenue vs. engagement bar chart
-- Detailed table: ProductName · ContentType · Likes · CTR · Score
-
-### 3. Product Quality & Customer Voice
-Customer sentiment and product quality metrics:
-- Rating matrix by product tier (Budget · Mid-Range · Premium)
-- Customer review table with ratings and review text
-- Rating distribution donut chart (ratings 1–5)
-- Geographic distribution map across European markets
-- Sankey-style cross-filter: Country × ProductName × Gender
-
----
-
 ## ⚙️ Technical Workflow
 
 ```
@@ -129,6 +99,35 @@ The model follows a **star schema** with:
 | `DimReviews` | Dimension | Customer ratings and review text |
 
 ---
+## 🗂️ Dashboard Pages
+
+### 1. Executive Overview
+High-level KPIs for decision-makers, including:
+- **9.57%** Conversion Rate
+- **219.01** Average Order Value
+- **25.72%** Engagement Rate
+- **15.21%** Drop-Off Percentage
+- Conversion rate trend over time (Jan 2023 – Jul 2025)
+- Funnel breakdown: VIEW → CLICK → DROP-OFF → PURCHASE
+- Session distribution: Home Page vs. Product Page vs. Total Visits
+
+### 2. Marketing & Engagement
+Product-level marketing performance analysis:
+- **8M** Total Views · **43.36K** Total Revenue · **198** Purchases
+- CTR comparison across all products (top performers: Baseball Glove 22.37%, Yoga Mat 22.12%)
+- Conversion Rate Efficiency scatter plot (Views vs. Conversion Rate by product)
+- Products Attractiveness: side-by-side revenue vs. engagement bar chart
+- Detailed table: ProductName · ContentType · Likes · CTR · Score
+
+### 3. Product Quality & Customer Voice
+Customer sentiment and product quality metrics:
+- Rating matrix by product tier (Budget · Mid-Range · Premium)
+- Customer review table with ratings and review text
+- Rating distribution donut chart (ratings 1–5)
+- Geographic distribution map across European markets
+- Sankey-style cross-filter: Country × ProductName × Gender
+
+---
 
 ## 📁 Repository Structure
 
@@ -149,33 +148,6 @@ EasyShop-Analytics-Dashboard/
 └── Docs/
     └── data_dictionary.md         # Column definitions and business logic
 ```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- SQL Server 2019+ (or SQL Server Express)
-- Power BI Desktop (latest version)
-
-### Steps
-
-1. **Restore the database**
-   ```sql
-   RESTORE DATABASE EasyShop
-   FROM DISK = 'path\to\easyshop.bak'
-   WITH MOVE 'EasyShop' TO 'path\EasyShop.mdf',
-        MOVE 'EasyShop_log' TO 'path\EasyShop_log.ldf'
-   ```
-
-2. **Run the cleaning scripts**
-   Execute scripts in `SQL/` folder in order (01 → 02 → 03).
-
-3. **Open Power BI**
-   Open `EasyShop.pbix` and update the SQL Server connection string to point to your local instance.
-
-4. **Refresh data**
-   Click **Home → Refresh** to load the latest data.
 
 ---
 ## 🔎 Project Insights
