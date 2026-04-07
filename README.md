@@ -46,6 +46,17 @@ Advanced DAX Measures
         ▼
 Power BI Dashboard (3 pages + landing screen)
 ```
+## 🗃️ Data Model
+
+The model follows a **star schema** with:
+
+| Table | Type | Description |
+|---|---|---|
+| `FactEvents` | Fact | User interaction events (VIEW, CLICK, DROP-OFF, PURCHASE) |
+| `DimProduct` | Dimension | Product details, category, tier, content type |
+| `DimCustomer` | Dimension | Customer demographics (gender, country) |
+| `DimDate` | Dimension | Date table for time-intelligence |
+| `DimReviews` | Dimension | Customer ratings and review text |
 
 ---
 
@@ -83,20 +94,6 @@ All dashboard pages support dynamic filtering by:
 - **Year** (2023 / 2024 / 2025)
 - **Country** (Austria, Belgium, France, Germany, Italy, Netherlands, Spain, Sweden, Switzerland, UK)
 - **Product Name** (20+ sports & lifestyle products)
-
----
-
-## 🗃️ Data Model
-
-The model follows a **star schema** with:
-
-| Table | Type | Description |
-|---|---|---|
-| `FactEvents` | Fact | User interaction events (VIEW, CLICK, DROP-OFF, PURCHASE) |
-| `DimProduct` | Dimension | Product details, category, tier, content type |
-| `DimCustomer` | Dimension | Customer demographics (gender, country) |
-| `DimDate` | Dimension | Date table for time-intelligence |
-| `DimReviews` | Dimension | Customer ratings and review text |
 
 ---
 ## 🗂️ Dashboard Pages
