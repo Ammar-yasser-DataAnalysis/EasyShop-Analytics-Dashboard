@@ -125,6 +125,12 @@ Customer sentiment and product quality metrics:
 - Sankey-style cross-filter: Country × ProductName × Gender
 
 ---
+## Dashboard Screenshots (Click to enlarge) :
+<img src="https://github.com/Ammar-yasser-DataAnalysis/EasyShop-Analytics-Dashboard/blob/main/Executive%20Overview.png">
+<img src="https://github.com/Ammar-yasser-DataAnalysis/EasyShop-Analytics-Dashboard/blob/main/Marketing%20%26%20Engagement.png">
+<img src="https://github.com/Ammar-yasser-DataAnalysis/EasyShop-Analytics-Dashboard/blob/main/Product%20Quality%20%26%20Customer%20Voice.png">
+<img src="https://github.com/Ammar-yasser-DataAnalysis/EasyShop-Analytics-Dashboard/blob/main/Model.png">
+---
 
 ## 📁 Repository Structure
 
